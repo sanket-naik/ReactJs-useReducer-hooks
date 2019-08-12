@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ShopingList from './components/ShopingList'
+import Counter from './components/Counter'
+import Login from './components/Login'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>UseReducer Hook :</h2>
+      <div style={{border:"solid red 1px"}}>
+        <h2>Basic Example:</h2>
+        <Counter/>
+      </div>
+      <div style={{border:"solid red 1px"}}>
+        <h2>Little more then a basic:</h2>
+       <ShopingList/>
+      </div>
+      <div style={{border:"solid red 1px"}}>
+        <h2>Complex:</h2>
+       <Login/>
+      </div>
     </div>
   );
 }
